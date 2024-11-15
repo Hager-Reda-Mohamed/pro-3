@@ -1,0 +1,594 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+background-color:rgb(232, 199, 238);
+
+}
+
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+
+
+  
+/*********************************************************** start page 1 ***********************************************************/
+/************** start header **************/
+.logo img{
+    width: 150px;
+    height: 70px;
+    float: left;
+}
+
+header{
+    height: 70px;
+    position: relative;
+}
+                   
+header ul{
+    float: left;
+    display: flex;
+}   
+    
+header li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 22px 0 22.3px;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+header a{
+    text-decoration: none;
+    color:rgb(55, 0, 49);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;    
+}
+    
+.activ .manuo{
+    display: none;
+    transition: 1s;
+    background-color: #fff;
+    border: 3.5px solid rgb(46, 5, 49);
+    border-radius: 10px;
+    text-transform: capitalize;
+    width: 400px;
+    height: 180px;
+    font-weight: bold;
+z-index: 5;
+}
+ 
+.list:hover .manuo{
+    display: block;
+    position: absolute;
+}
+
+table td{
+padding: 9px;
+width: 150px;
+color: rgb(55, 0, 49);
+}
+
+
+table span{
+    border-bottom: 2px dotted rgb(55, 0, 49);
+    display: block;
+    width: 50px;
+    margin-top: 10px;
+}
+
+table .color td{
+    color: rgb(55, 0, 49);
+    font-weight: bold;
+    font-size: 18px;
+} 
+
+header ul li:hover span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(46, 15, 47);
+    animation: line1 1s linear infinite;
+}
+
+@keyframes line1{
+            
+0%{
+    transform: translateX(-100%);
+}
+            
+100%{
+    transform: translateX(100%);
+}                       
+}
+                                  
+header ul li:hover span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: rgb(43, 12, 52);
+    animation: line2 1s linear infinite;
+    animation-delay: 0.5s;
+    z-index: 1;
+}
+            
+@keyframes line2{
+
+0%{
+    transform: translateY(-100%);
+}    
+
+100%{
+    transform: translateY(100%);
+}           
+}
+                       
+header ul li:hover span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(40, 11, 40);
+    animation: line3 1s linear infinite;
+    z-index: 2;
+}
+            
+@keyframes line3{
+            
+0%{
+    transform: translateX(100%);
+}
+            
+100%{            
+transform: translateX(-100%);
+}            
+}
+           
+header ul li:hover span:nth-child(4){
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: rgb(43, 12, 40);
+    animation: line4 1s linear infinite;
+    animation-delay: 0.5s;
+    z-index: 3;
+}
+            
+@keyframes line4{
+
+0%{
+    transform: translateY(100%);
+
+}    
+
+100%{
+    transform: translateY(-100%);
+}         
+}
+            
+header .icon1{
+    float: right;
+    margin-top: 30px;
+}
+    
+header .icon1 i:hover{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+header .icon1 i{
+    margin-left: 15px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+header .icon1 h3{
+    text-transform: capitalize;
+    margin-left: 8px;
+    display: inline-block;
+    font-size: 17px;
+    color: #9d6a7e;
+}        
+/************** end header **************/
+
+/************** start section1 **************/
+.section1{
+    height: 81vh;
+    padding: 0 100px;
+    margin-top: 2%;
+    z-index: 2;
+    background-image: url(../imges/مستحضرات_rituals--\(2\).png);
+    background-size: cover;
+    position: relative;
+}
+
+.section1 button{
+    position: absolute;
+    bottom: 80px;
+    width: 20%;
+    text-transform: capitalize;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+.section1 button:hover{
+    opacity: 0.8;
+}
+
+.section1 img{
+    margin: 100px 0 0 0;
+    width: 100%;
+}
+/************** end section1 **************/
+/*********************************************************** end page 1 ***********************************************************/
+
+
+
+
+
+
+/*********************************************************** start page 2 ***********************************************************/
+
+/************** start start-title **************/
+.start-title{
+    margin: 3% 0;
+}
+    
+.start-title h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 33px;
+  color: #2d0d29;
+
+}
+    
+.start-title .line2{
+    display: block;
+    width: 140px;
+    height: 3px;
+    background-color: rgb(44, 15, 51);
+    margin: auto;
+    margin-top: 10px;
+border-radius: 50%;
+cursor: pointer;
+}
+    
+.start-title .line2:hover{
+    transform: scalex(1.5);
+    transition: 2s;
+}
+/************** end start-title **************/      
+        
+/************** start Pictures **************/       
+.Pictures{
+    margin-bottom: 50px;
+}
+.Pictures img{
+    height: 300px;
+    width: 309px;
+    margin-left: 10px;
+}
+      
+.Pictures .img1{
+    display: inline-block;        
+}
+        
+.Pictures .img1 h3{
+    color: #350f29;
+    float: left;       
+}        
+
+.Pictures .img1 p{
+    margin-top: 20px;
+    width: 50%;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+} 
+                
+.img1 i{        
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color:  rgb(45, 16, 45);
+    color: white;
+    line-height: 30px;
+    text-align: center; 
+    margin-top: -10px;
+    font-weight: bold;
+    opacity: 0;        
+}
+
+.img1:hover i{
+    opacity: 1;        
+}
+/************** end Pictures **************/
+
+/************** start Pictures-info **************/       
+.Pictures-info{
+    position: relative;
+}
+                       
+.Pictures-title1{
+    width: 650px;
+    height: 300px;
+    background-color: #5e3960;
+    float: left;
+    padding: 0 20px 20px 20px;
+}
+            
+.Pictures-info i{
+    font-size: 50px;
+    color:  white;       
+}
+
+.Pictures-info .text{
+    position: absolute;
+    top: 20px;
+    left: 75px;        
+}            
+        
+.Pictures-info .text h3{
+    color:  white;
+}      
+        
+.Pictures-info p{
+    margin-top: 50px;
+    line-height: 25px;
+    font-weight: bold;
+    word-spacing: 3px;
+}
+            
+.line-color{
+    position: absolute;
+    margin: 20% 35%;
+}
+      
+.Pictures-info .line1,
+.Pictures-info .line2,
+.Pictures-info .line3{
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    display: inline-block;
+}
+
+.Pictures-title2,
+.Pictures-title3{
+    height: 300px;
+    width: 290px;
+    float: left;
+    margin-left: 22px;
+    padding: 20px;
+    transition: 2s;
+}       
+            
+.Pictures-title2 h3,
+.Pictures-title3 h3{
+    color: rgb(62, 17, 60);
+}
+                
+.Pictures-title2 h2,
+.Pictures-title3 h2{
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+       
+.Pictures-title2{
+    background-image: url(../imges/455964434_17905422450006178_7557698832269735054_n.jpg);
+    background-size: cover;
+}        
+        
+.Pictures-title3{
+    background-image: url(../imges/458921735_122169410594114393_1990641669882101545_n.jpg);
+    background-size: 100% 130%;
+
+}
+
+                   
+.Pictures-title2:hover,
+.Pictures-title3:hover{
+    transform: scale(1.1);        
+}
+/************** end Pictures-info **************/
+
+/************** start icon-container **************/
+.icon-container{
+    width: 85%;
+    display: flex;
+    column-count: 5;
+    column-rule: 3px solid #1d0b23;
+    display: block;
+    margin: 32% 0 3% 9%;
+}
+     
+hr{
+    width: 85%;
+    margin: auto;
+}
+
+.icon-1{
+    width: 100%;
+    text-align: center;  
+}
+            
+.icon{
+    height: 35px;
+    transition: transform 0.3s ease ;
+    font-size: 50px;
+    color: #290f26;
+    opacity: 0.5;
+}
+
+.icon-1 h3{
+    color: rgba(48, 16, 38, 0.5);
+}
+        
+.hidden{
+    opacity: 0;
+    transform: translateY(20px);
+    color: #2b0f2c;
+}
+        
+.icon-1:hover .icon{
+    transform: translateY(-70px);
+    opacity: 0;
+    transition: 0.5s;            
+}
+            
+.icon-1:hover .icon + .hidden{
+    opacity: 1;
+    transform: translateY(-30px);
+}
+/************** end icon-container **************/
+/*********************************************************** end page 2 ***********************************************************/
+
+
+
+
+
+
+/*********************************************************** start page 3 ***********************************************************/ 
+/************** start header-2 **************/
+.header-2 li{
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 50px 30px;
+    
+}
+    
+.header-2 ul {
+    text-align: center; 
+    
+}
+    
+.header-2 a{
+    text-decoration: none;
+color:rgb(102, 49, 98) ;
+}
+    
+.header-2 li a:hover{
+    color:rgb(184, 167, 184) ;
+}
+/************** end header-2 **************/
+   
+/************** start all-images **************/    
+body{
+    perspective: 600px;    
+}
+    
+.all-images{
+    width: 100%;
+    height: 80vh;    
+}
+    
+.box{
+    width: 400px;
+    position: relative; 
+     display: inline-block;
+}
+    
+.ltr{
+margin: 0 3%;
+}
+    
+.box img{
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 20px;
+
+}    
+    
+section .face , .back{
+    width: 400px;
+    height: 400px;  
+}
+    
+section{
+    transform-style: preserve-3d;
+    transition: 1s;
+    position: relative;   
+}
+    
+.face , .back{
+    position: absolute; 
+}
+    
+.face{
+z-index: 2;
+backface-visibility: hidden;  
+}
+    
+.back{
+    transform: rotateY(180deg);    
+}
+    
+section:hover{
+    transform: rotateY(180deg);   
+}
+/************** end all-images **************/    
+     
+/************** start stars **************/         
+.stars{
+    position: absolute;
+    top: 50%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.stars i{
+    color: rgb(102, 49, 98);
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(214, 190, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;    
+}
+       
+.stars a{
+    text-decoration: none;
+    display: inline-block;
+}  
+    
+.end-info{
+    position: absolute;
+    bottom: -500px;
+    left: 0;
+}
+    
+.end-info i{
+    color: #623264;    
+}
+    
+.end-info h3{
+    text-transform: capitalize;
+    color: #723c68;    
+}
+/************** end stars **************/                   
+/*********************************************************** end page 3 ***********************************************************/
